@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dadbb1;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-container {
+    max-width: 250px;  /* Adjust as necessary */
+    padding: 20px 0;
+    text-align: left;  /* Align logo to the left */
+}
+
+.logo-container img {
+    width: 100%;       /* Make the logo fill its container */
+    height: auto;      /* Maintain the aspect ratio */
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #889063;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #889063;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.card a {
+    color: #4c3d19;  /* Set color for both 'Read more' and 'Watch now' links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect - color changes to #dda15e when cursor is on the links */
+.card a:hover {
+    text-decoration: underline;
+    color: #dda15e;  /* Change to #dda15e when hovered */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-container .card {
+    animation: fadeInUp 0.5s ease-out forwards;
+}

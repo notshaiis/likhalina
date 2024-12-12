@@ -1,0 +1,103 @@
+:root {
+    --moss-green: #dadbb1;
+    --ff-yuji-mai: 'Yuji Mai', serif;
+    --ff-radio-canada: 'Radio Canada', sans-serif;
+    --ff-moderustic: 'Moderustic', serif;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background: #dadbb1;
+}
+
+.logo-container {
+    padding: 15px 20px;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+  
+.logo-container a img.logo {
+    width: 170px;
+    height: 70px;
+    margin-right: 5px;
+    opacity: 0.85;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+    padding: 1rem 0;
+    justify-content: center;
+}
+.box {
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid var(--moss-green);    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.box:hover {
+    border: 2px solid #212121;
+}
+
+.box img {
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.title-container h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: var(--ff-radio-canada);
+}
+
+.box .description {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-family: var(--ff-moderustic);
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+.description p {
+    padding: 0px 10px 15px 10px;
+}

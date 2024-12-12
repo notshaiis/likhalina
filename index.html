@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ABACA</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&family=Moderustic:wght@300..800&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/b40850cb13.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="popup-container">
+            <div class="close-button" id="close-popup"><i class="fa-solid fa-xmark"></i></div>
+            <div class="video-container">
+                <iframe id="youtube-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="parent-container">
+            <header id="header">
+                <div class="logo-container">
+                    <a href="./index.html">
+                        <img class="logo" src="./img/logo.jpg">
+                    </a>
+                </div>
+                <div class="dropdown-menu">
+                    <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+                    <div class="dropdown-content">
+                        <a href="articles.html" id="article-btn">Articles</a>
+                        <a href="tutorials.html">Tutorials</a>
+                        <a href="references.html">References</a>
+                        <a href="about_us.html">About Us</a>
+
+                    </div>
+                </div>
+            </header>
+            <div id="home-section">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="slide-products">
+                                <a href="./products.html">
+                                    <img src="./img/homepage/products.jpg" />
+                                    <div class="overlay"></div>
+                                    <h2>Products</h2>
+                                </a>
+                            </div>                            
+                            <div class="swiper-slide" id="slide-uses">
+                                <a href="./uses.html">
+                                    <img src="./img/homepage/uses.jpg" />
+                                    <div class="overlay"></div>
+                                    <h2>Uses</h2>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="slide-history">
+                                <a href="./history.html">
+                                    <img src="./img/homepage/history.jpg" />
+                                    <div class="overlay"></div>
+                                    <h2>History</h2>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="slide-origin">
+                                <a href="./origin.html">
+                                    <img src="./img/homepage/origin.jpg" />
+                                    <div class="overlay"></div>
+                                    <h2>Origin</h2>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="slide-benefits">
+                                <a href="./trivia.html">
+                                    <img src="./img/homepage/trivia.jpg" />
+                                    <div class="overlay"></div>
+                                    <h2>Trivia</h2>
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
